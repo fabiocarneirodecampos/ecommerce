@@ -29,7 +29,7 @@ class Page{
 
 		$this->setData($this->options["data"]);
 
-		$this->tpl->draw("hader");
+		$this->tpl->draw("header");
 
 	}
 
@@ -43,19 +43,17 @@ class Page{
 }
 
 	public function setTpl($name, $data = array(), $returnHTML = false){
-
+		
 		$this->setData($data);
 
 		return $this->tpl->draw($name, $returnHTML);
 
 	}
 
-				
-	
 
 	public function __destruct(){
 
-
+		$this->tpl->draw("footer");
 
 	}
 
