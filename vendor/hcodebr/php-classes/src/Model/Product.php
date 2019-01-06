@@ -90,7 +90,7 @@ class Product extends Model {
 		public function setPhoto($file)
 		{
 
-			$extension = explode('.',$FILE['name']);
+			$extension = explode('.',$file['name']);
 			$extension = end($extension);
 
 			switch ($extension) {
