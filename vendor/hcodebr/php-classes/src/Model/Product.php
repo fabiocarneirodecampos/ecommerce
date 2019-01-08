@@ -23,8 +23,9 @@ class Product extends Model {
 				$p = new Product();
 				$p->setData($row);
 				$row = $p->getValues();
-
 			}
+
+			return $list;
 		}
 
 		public function save()
