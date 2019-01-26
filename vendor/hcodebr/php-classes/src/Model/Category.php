@@ -107,7 +107,7 @@ class Category extends Model {
 
 			$sql = new Sql();
 
-			$sql->select("
+			$results = $sql->select("
 				SELECT SQL_CALC_FOUND_ROWS * 
 				FROM tb_products a 
 				INNER JOIN tb_productscategories b ON a.idproduct = b.idproduct 
