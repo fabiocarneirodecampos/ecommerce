@@ -81,7 +81,7 @@ $app->get("/cart/:idproduct/add", function($idproduct){
 
 	$cart = Cart::getFromSession();
 
-	$cart->addProduct($Product);
+	$cart->addProduct($product);
 
 	header("Location: /cart");
 	exit;
